@@ -12,9 +12,9 @@ function getTranslationURL(text)
 }
 
 
-function errorHandler()
+function errorHandler(error)
 {
-   console.log("error occured", error);
+   console.log("error occured",error);
    alert('something wrong with server! Try again later.');
 }
 
@@ -32,6 +32,6 @@ function clickHandler(){
     .catch(errorHandler);    // Handles errors in case the server crashes
 
 }
-btnTranslate.addEventListener('click',clickHandler)
+btnTranslate.addEventListener('click',clickHandler);
  
 
